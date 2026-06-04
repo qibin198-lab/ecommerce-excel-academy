@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-excel-50: #e8f5e9;
+  --color-excel-100: #c8e6c9;
+  --color-excel-200: #a5d6a7;
+  --color-excel-300: #81c784;
+  --color-excel-400: #66bb6a;
+  --color-excel-500: #217346;
+  --color-excel-600: #1b5e38;
+  --color-excel-700: #154a2c;
+  --color-excel-800: #0f3620;
+  --color-excel-900: #0a2214;
+}
+
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui,
+    -apple-system, sans-serif;
+  @apply bg-gray-50 text-gray-900 antialiased;
+}
+
+/* Progress bar animation */
+@keyframes fillProgress {
+  from { width: 0%; }
+}
+.progress-fill {
+  animation: fillProgress 0.8s ease-out;
+}
+
+/* Course content tables */
+.course-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 0.875rem;
+}
+.course-content th {
+  background: #e8f5e9;
+  color: #217346;
+  font-weight: 600;
+  padding: 10px 14px;
+  text-align: center;
+  border: 1px solid #c8e6c9;
+}
+.course-content td {
+  padding: 9px 14px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+.course-content tr:nth-child(even) td {
+  background: #fafbfb;
+}
+.course-content h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1A1A2E;
+  margin: 20px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e8f5e9;
+}
+.course-content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 16px 0 8px;
+}
+.course-content p {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+.course-content ul {
+  margin: 8px 0 14px 20px;
+}
+.course-content li {
+  margin-bottom: 4px;
+}
+.course-content code {
+  background: #f3f4f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #217346;
+}
+.course-content strong {
+  color: #1A1A2E;
+}
